@@ -11,7 +11,6 @@ export const counterReducer = (state = null, action) => {
 export const nameReducer = (state = null, action) => {
   switch (action.type) {
     case "CHANGE_NAME": 
-    console.log("ACTION: ", action)
     return action.name;
 
     default:
