@@ -1,7 +1,7 @@
 export const counterReducer = (state = null, action) => {
   switch (action.type) {
     case "INCREMENT": 
-    return state.counter + 1;
+    return state + 1
 
     default:
       return state;
@@ -11,7 +11,8 @@ export const counterReducer = (state = null, action) => {
 export const nameReducer = (state = null, action) => {
   switch (action.type) {
     case "CHANGE_NAME": 
-    return {...state, name: action.payload};
+    console.log("ACTION: ", action)
+    return action.name;
 
     default:
       return state;
